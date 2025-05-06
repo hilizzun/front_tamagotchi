@@ -6,10 +6,11 @@
 
   span {
     text-align: left;  // Текст по левому краю
+    margin-right: 15px;
   }
 
   .bar {
-    width: 135px;
+    width: 150px;
     height: 15px;
     background-color: #ddd;
     border-radius: 5px;
