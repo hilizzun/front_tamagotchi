@@ -1,0 +1,43 @@
+.pet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+    .pet-wrapper {
+      position: relative;
+      width: 200px; // или подстрой под размер твоего питомца
+      height: 200px;
+      margin: 0 auto;
+    }
+  
+    .pet-image {
+      width: 200px;
+      height: auto;
+      transition: opacity 0.5s ease-in-out;
+    }
+    
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+    .pet-clothes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      pointer-events: none;
+      z-index: 1; /* Одежда будет поверх питомца */
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+  }
